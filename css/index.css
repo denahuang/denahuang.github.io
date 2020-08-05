@@ -1,4 +1,8 @@
 h1 {
   color: blue; }
 
+.header .logo {
+  width: 80 px;
+  height: 80 px; }
+
 /*# sourceMappingURL=index.css.map */
