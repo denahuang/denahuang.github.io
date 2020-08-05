@@ -18,6 +18,10 @@ body {
 
     .middle {
         display: none;
+
+        .mouse {
+            display: none;
+        }
     }
     
 
@@ -35,6 +39,7 @@ body {
             transform: translate(-50%,-50%);
     
             .mouse {
+                display: block;
                 width: 100px;
                 height: 180px;
                 border: 4px solid #333;

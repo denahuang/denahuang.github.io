@@ -8,6 +8,8 @@ body {
 
 .intro .middle {
   display: none; }
+  .intro .middle .mouse {
+    display: none; }
 
 @media only screen and (min-device-width: 481px) {
   .intro .middle {
@@ -17,6 +19,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
     .intro .middle .mouse {
+      display: block;
       width: 100px;
       height: 180px;
       border: 4px solid #333;
