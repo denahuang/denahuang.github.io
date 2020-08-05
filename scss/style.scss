@@ -1,11 +1,15 @@
-
+$primary-light: #f1f1f1;
 
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+
 }
 
 .header {
+    height: 80px;
+    background: $primary-light;
 
     .logo {
         width: 80px;
