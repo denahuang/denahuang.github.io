@@ -7,17 +7,39 @@
 
     <link rel="icon" type="image/png" href="/imgs/favicon-dh.PNG">
     
+    <script src="https://kit.fontawesome.com/f76a451a85.js" crossorigin="anonymous"></script>
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
+    
 </head>
 
 <body>
     <section class="header">
-        <img src="imgs/name-black.PNG" alt="dena huang" class="logo">
-        <div class="nav">
-
-        </div>
+        
+        <nav class="navbar navbar-dark red lighten-1">
+            <img src="imgs/name-black.PNG" alt="dena huang" class="logo">
+            <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
+            aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="nav-icon"><span></span><span></span><span></span><span></span></div>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </section>
 
     <section class="intro">
@@ -27,9 +49,39 @@
         </div>
     </section>
 
+    <footer>
+        <div class="socials">
+            <p>Contact Me On</p>
+            <div class="container socials-container">
+                <div class="row">
+                    <div class="col-6 col-md-4 socials-div instagram">
+                        <a href="https://www.instagram.com/denahuangg/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="col-6 col-md-4 socials-div linkedin">
+                        <a href="https://linkedin.com/in/denahuang" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-6 col-md-4 socials-div github">
+                        <a href="https://github.com/denahuang" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="col-6 col-md-4 socials-div email">
+                        <a href="mailto:denahuangg@gmail.com"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
 
+    <script>
+        $(document).ready(function () {
+            $('.second-button').on('click', function () {
+                $('.nav-icon').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 
 
