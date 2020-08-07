@@ -150,6 +150,8 @@ footer {
       .intro .flip-card .flip-card-inner .flip-card-front {
         background-color: #bbb;
         color: black; }
+        .intro .flip-card .flip-card-inner .flip-card-front img {
+          height: 100%; }
       .intro .flip-card .flip-card-inner .flip-card-back {
         background-color: dodgerblue;
         color: white;
