@@ -108,6 +108,7 @@ body {
             
 
             .nav-item {
+                background: $primary-light;
 
                 a {
                     color: $primary-dark;
@@ -118,7 +119,10 @@ body {
 }
 
 .intro {
-    height: 200px;
+    
+    .flip-card {
+        display: none;
+    }
 
     .middle {
         display: none;
@@ -138,46 +142,103 @@ footer {
     padding-bottom: 50px;
   
     .socials {
-  
-      p {
-        margin: 0;
-        text-align: center;
-        font-size: 32px;
-      }
-  
-      .socials-container {
-        margin: 0;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
 
-        .row {
+        p {
             margin: 0;
+            text-align: center;
+            font-size: 32px;
+        }
+  
+        .socials-container {
+            margin: 10px 0;
+            padding: 0;
 
-            .socials-div {
+            ul {
                 padding: 0;
+                margin: 0;
                 display: flex;
+                align-items: center;
                 justify-content: center;
-    
-                a {
-                color: $primary-light;
-                text-decoration: none;
-    
-                i {
-                    font-size: 28px;
-                }
-                }
-    
-                a:hover {
-                    color: $hover;
+                list-style: none;
+
+                .socials-div {
+                    padding: 0;
+                    margin: 2vw;
+                    border-radius: 50%;
+        
+                    a {
+                        color: $primary-dark;
+                        text-decoration: none;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        background: #fff;
+                        border-radius: 50%;
+                        position: relative;
+                        height: 15vw;
+                        width: 15vw;
+        
+                        i {
+                            font-size: 9vw;
+                        }
+                    }
+        
+                    a:hover {
+                        background: $hover;
+                    }
                 }
             }
+            // }
         }
-      }
     }
-  }
+}
 
 @media only screen and (min-device-width: 481px) {
 
     .intro {
+
+        .flip-card {
+            display: block;
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px; /* creates 3D effect*/
+
+            .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+
+                .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                }
+
+                .flip-card-front {
+                    background-color: #bbb;
+                    color: black;
+                }
+
+                .flip-card-back {
+                    background-color: dodgerblue;
+                    color: white;
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
 
         .middle {
             display: inline;
@@ -219,7 +280,31 @@ footer {
                 }
             }
         }
+    }
 
+    footer {
+
+
+        .socials {
+
+            .socials-container {
+
+                ul {
+
+                    .socials-div {
+
+                        a {
+                            height: 50px;
+                            width: 50px;
+
+                            i {
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
