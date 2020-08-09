@@ -146,15 +146,11 @@ footer {
         position: absolute;
         width: 100%;
         height: 100%;
-        backface-visibility: hidden; }
-      .intro .flip-card .flip-card-inner .flip-card-front {
-        background-color: #bbb;
-        color: black; }
-        .intro .flip-card .flip-card-inner .flip-card-front img {
+        backface-visibility: hidden;
+        background: #fff; }
+        .intro .flip-card .flip-card-inner .flip-card-front img, .intro .flip-card .flip-card-inner .flip-card-back img {
           height: 100%; }
       .intro .flip-card .flip-card-inner .flip-card-back {
-        background-color: dodgerblue;
-        color: white;
         transform: rotateY(180deg); }
   .intro .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg); }
