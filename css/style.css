@@ -3,16 +3,33 @@ body {
   padding: 0;
   height: 100%; }
 
+.intro .middle {
+  display: none; }
+  .intro .middle .mouse {
+    display: none; }
+
+.animation {
+  height: 100vh;
+  position: relative;
+  background: lightblue; }
+  .animation .paper-plane {
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    left: 0%; }
+
 .header {
   height: 80px;
-  background: #f1f1f1; }
+  background: #f1f1f1;
+  overflow: visible; }
   .header .logo {
     width: 80px;
     height: 80px;
     margin-left: 10px; }
   .header .navbar {
     padding: 0;
-    display: flex; }
+    position: sticky;
+    top: 0; }
     .header .navbar .nav-icon {
       width: 30px;
       height: 20px;
@@ -76,24 +93,20 @@ body {
       .header .navbar .navbar-nav .nav-item a {
         color: #232222; }
 
-.intro {
+.intro2 {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .intro .flip-card {
+  .intro2 .flip-card {
     display: none; }
-  .intro .intro-p {
+  .intro2 .intro-p {
     margin: 20px; }
-    .intro .intro-p .p1 {
+    .intro2 .intro-p .p1 {
       font-size: 20px; }
-    .intro .intro-p .p2 {
+    .intro2 .intro-p .p2 {
       font-size: 15px; }
-  .intro .image img {
+  .intro2 .image img {
     width: 90vw; }
-  .intro .middle {
-    display: none; }
-    .intro .middle .mouse {
-      display: none; }
 
 footer {
   background: #232222;
@@ -139,33 +152,6 @@ footer {
             background: #d3d3d3; }
 
 @media only screen and (min-device-width: 481px) {
-  .intro .flip-card {
-    display: block;
-    background-color: transparent;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    /* creates 3D effect*/ }
-    .intro .flip-card .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d; }
-      .intro .flip-card .flip-card-inner .flip-card-front, .intro .flip-card .flip-card-inner .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: #fff; }
-        .intro .flip-card .flip-card-inner .flip-card-front img, .intro .flip-card .flip-card-inner .flip-card-back img {
-          height: 100%; }
-      .intro .flip-card .flip-card-inner .flip-card-back {
-        transform: rotateY(180deg); }
-  .intro .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); }
   .intro .middle {
     display: inline;
     position: absolute;
@@ -197,6 +183,34 @@ footer {
     to {
       opacity: 0;
       top: 150px; } }
+  .intro2 .flip-card {
+    display: block;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* creates 3D effect*/ }
+    .intro2 .flip-card .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d; }
+      .intro2 .flip-card .flip-card-inner .flip-card-front, .intro2 .flip-card .flip-card-inner .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #fff; }
+        .intro2 .flip-card .flip-card-inner .flip-card-front img, .intro2 .flip-card .flip-card-inner .flip-card-back img {
+          height: 100%; }
+      .intro2 .flip-card .flip-card-inner .flip-card-back {
+        transform: rotateY(180deg); }
+  .intro2 .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); }
+
   footer .socials .socials-container ul .socials-div a {
     height: 50px;
     width: 50px; }

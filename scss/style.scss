@@ -7,12 +7,37 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+}
 
+.intro {
+
+    .middle {
+        display: none;
+
+        .mouse {
+            display: none;
+        }
+    }
+}
+
+.animation {
+    height: 100vh;
+    position: relative;
+    // overflow: hidden;
+    background: lightblue;
+
+    .paper-plane {
+        position: absolute;
+        height: 100px;
+        top: 50%;
+        left: 0%;
+    }
 }
 
 .header {
     height: 80px;
     background: $primary-light;
+    overflow: visible;
 
     .logo {
         width: 80px;
@@ -22,7 +47,8 @@ body {
 
     .navbar {
         padding: 0;
-        display: flex;
+        position: sticky;
+        top: 0;
 
         .nav-icon {
             width: 30px;
@@ -118,7 +144,9 @@ body {
     }  
 }
 
-.intro {
+
+
+.intro2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,16 +175,11 @@ body {
         }
     }
 
-    .middle {
-        display: none;
-
-        .mouse {
-            display: none;
-        }
-    }
     
 
 }
+
+
 
 footer {
     background: $primary-dark;
@@ -214,7 +237,6 @@ footer {
                     }
                 }
             }
-            // }
         }
     }
 }
@@ -222,6 +244,50 @@ footer {
 @media only screen and (min-device-width: 481px) {
 
     .intro {
+
+        .middle {
+            display: inline;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+    
+            .mouse {
+                display: block;
+                width: 100px;
+                height: 180px;
+                border: 4px solid #333;
+                border-radius: 60px;
+            }
+    
+            .mouse::before {
+                content: "";
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 30px;
+                background: #333;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                opacity: 1;
+                animation: mouse 2s infinite;
+            }
+    
+            @keyframes mouse {
+                from {
+                    opacity: 1;
+                    top: 30px;
+                }
+                to {
+                    opacity: 0;
+                    top: 150px;
+                }
+            }
+        }    
+    }
+
+    .intro2 {
 
         .flip-card {
             display: block;
@@ -265,46 +331,7 @@ footer {
             transform: rotateY(180deg);
         }
 
-        .middle {
-            display: inline;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-    
-            .mouse {
-                display: block;
-                width: 100px;
-                height: 180px;
-                border: 4px solid #333;
-                border-radius: 60px;
-            }
-    
-            .mouse::before {
-                content: "";
-                width: 25px;
-                height: 25px;
-                position: absolute;
-                top: 30px;
-                background: #333;
-                left: 50%;
-                transform: translateX(-50%);
-                border-radius: 50%;
-                opacity: 1;
-                animation: mouse 2s infinite;
-            }
-    
-            @keyframes mouse {
-                from {
-                    opacity: 1;
-                    top: 30px;
-                }
-                to {
-                    opacity: 0;
-                    top: 150px;
-                }
-            }
-        }
+        
     }
 
     footer {
