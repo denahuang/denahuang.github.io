@@ -3,14 +3,69 @@ body {
   padding: 0;
   height: 100%; }
 
-.intro .middle {
-  display: none; }
-  .intro .middle .mouse {
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px; }
+  .intro img {
+    height: 200px;
+    border-radius: 50%; }
+  .intro h1 {
+    font-family: 'Georgia', Arial;
+    margin: 20px 0 50px; }
+  .intro .scroll-section {
+    width: 100%;
+    height: 100px; }
+    .intro .scroll-section .scroll-mobile {
+      position: relative;
+      left: 50%;
+      bottom: -80px;
+      width: 40px;
+      height: 40px;
+      transform: translateY(-80px) translateX(-50%) rotate(45deg); }
+      .intro .scroll-section .scroll-mobile span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid #232222;
+        border-right: 2px solid #232222;
+        animation: animate 1.5s linear infinite;
+        opacity: 0; }
+    .intro .scroll-section span:nth-child(1) {
+      transform: translate(-15px, -15px);
+      animation-delay: -0.4s; }
+    .intro .scroll-section span:nth-child(2) {
+      transform: translate(0px, 0px);
+      animation-delay: -0.2s; }
+    .intro .scroll-section span:nth-child(3) {
+      transform: translate(15px, 15px);
+      animation-delay: 0s; }
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0; }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1; }
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0; } }
+  .intro .middle {
     display: none; }
+    .intro .middle .mouse {
+      display: none; }
 
 .animation {
   height: 100vh;
   position: relative;
+  overflow: hidden;
   background: lightblue; }
   .animation .paper-plane {
     position: absolute;
