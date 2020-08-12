@@ -14,25 +14,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding-top: 80px;
 
     img {
-        height: 200px;
+        height: 35vh;
         border-radius: 50%;
-        margin-top: 80px;
-        // display: 
+        margin-top: 15vh;
     }
 
     h1 {
+        font-size: 6vh;
         font-family: 'Georgia', Arial;
-        margin: 30px 0 50px;
+        margin: 5vh 0 10vh;
+        // margin: 30px 0 50px;
     }
 
     .scroll-section {
         width: 100%;
-        height: 100px;
-        position: absolute;
-        bottom: 0;
+        // height: 100px;
+        margin-top: 10vh;
+        // position: absolute;
+        // bottom: 0;
 
         .scroll-mobile {
             position: relative;
@@ -111,8 +112,8 @@ body {
 
     .paper-plane {
         position: absolute;
-        height: 100px;
-        top: 60%;
+        height: 15vh;
+        top: 60vh;
     }
 
     
