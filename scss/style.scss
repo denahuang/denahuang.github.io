@@ -10,15 +10,17 @@ body {
 }
 
 .intro {
-    height: 100vh;
+    height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
+    // padding-top: 80px;
 
     img {
         height: 200px;
         border-radius: 50%;
+        margin-top: 80px;
+        // display: 
     }
 
     h1 {
@@ -90,29 +92,33 @@ body {
         }
     }
 
+    // .middle {
+    //     display: none;
 
-    .middle {
-        display: none;
-
-        .mouse {
-            display: none;
-        }
-    }
+    //     .mouse {
+    //         display: none;
+    //     }
+    // }
 }
 
 .animation {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     overflow: hidden;
-    background: lightblue;
 
     .paper-plane {
         position: absolute;
         height: 100px;
-        top: 50%;
-        left: 0%;
+        top: 60%;
     }
+
+    
 }
+
+
 
 .header {
     height: 80px;
@@ -325,46 +331,46 @@ footer {
 
     .intro {
 
-        .middle {
-            display: inline;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+        // .middle {
+        //     display: inline;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%,-50%);
     
-            .mouse {
-                display: block;
-                width: 100px;
-                height: 180px;
-                border: 4px solid #333;
-                border-radius: 60px;
-            }
+        //     .mouse {
+        //         display: block;
+        //         width: 100px;
+        //         height: 180px;
+        //         border: 4px solid #333;
+        //         border-radius: 60px;
+        //     }
     
-            .mouse::before {
-                content: "";
-                width: 25px;
-                height: 25px;
-                position: absolute;
-                top: 30px;
-                background: #333;
-                left: 50%;
-                transform: translateX(-50%);
-                border-radius: 50%;
-                opacity: 1;
-                animation: mouse 2s infinite;
-            }
+        //     .mouse::before {
+        //         content: "";
+        //         width: 25px;
+        //         height: 25px;
+        //         position: absolute;
+        //         top: 30px;
+        //         background: #333;
+        //         left: 50%;
+        //         transform: translateX(-50%);
+        //         border-radius: 50%;
+        //         opacity: 1;
+        //         animation: mouse 2s infinite;
+        //     }
     
-            @keyframes mouse {
-                from {
-                    opacity: 1;
-                    top: 30px;
-                }
-                to {
-                    opacity: 0;
-                    top: 150px;
-                }
-            }
-        }    
+        //     @keyframes mouse {
+        //         from {
+        //             opacity: 1;
+        //             top: 30px;
+        //         }
+        //         to {
+        //             opacity: 0;
+        //             top: 150px;
+        //         }
+        //     }
+        // }    
     }
 
     .intro2 {
