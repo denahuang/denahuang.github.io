@@ -107,7 +107,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 
     .paper-plane {
         position: absolute;
@@ -115,8 +115,94 @@ body {
         top: 63vh;
     }
 
+    // .fade-in2 {
+    //     position: fixed;
+    //     top: 50vh;
+    //     left: 10vw;
+
+    //     .typing {
+    //         height: 20vh;
+    //     }
+    // }
+
+    // .typing {
+    //     height: 20vh;
+    //     position: relative;
+    //     opacity: 0;
+    // }
+
+
+    // .bubble {
+    //     background: #DEDFDF;
+    //     border-radius: 25px;
+
+    //     p {
+    //         font-size:6vh;
+    //     }
+    // }
     
 }
+
+
+.message {
+    margin-top: 200px;
+
+    .bubble {
+        
+
+        p {
+            background: #DEDFDF;
+            border-radius: 50px;
+            font-size: 5vh;
+            padding: 10px 20px;
+            width: fit-content;
+        }
+    }
+
+    .fade-in {
+        position: relative;
+        padding: 5px 20px;
+
+        .typing {
+            height: 20vh;
+        }
+    }
+}
+
+
+// .message {
+//     height: 80vh;
+//     background: lightblue;
+
+//     .reveal1 {
+//         opacity: 0;
+//         -webkit-transform: scale(0.9);
+//              -moz-transform: scale(0.9);
+//                 -ms-transform: scale(0.9);
+//                  -o-transform: scale(0.9);
+//                         transform: scale(0.9);
+//         -webkit-transition: all 1s ease-in-out;
+//              -moz-transition: all 1s ease-in-out;
+//                 -ms-transition: all 1s ease-in-out;
+//                  -o-transition: all 1s ease-in-out;
+//                         transition: all 1s ease-in-out;
+//     }
+
+//     .visible {
+//         opacity: 1;
+//         -webkit-transform: none;
+//                 -moz-transform: none;
+//                 -ms-transform: none;
+//                     -o-transform: none;
+//                         transform: none;
+
+//         img {
+//             height: 20vh;
+//         }
+//     }
+// }
+
+
 
 
 

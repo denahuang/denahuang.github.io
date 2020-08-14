@@ -2,4 +2,4 @@ some useful tutorials:
 
 ScrollMagic:
 https://www.youtube.com/watch?v=fR0tHI0nFYk
-
+https://www.youtube.com/watch?v=c85GjM7vy5A
