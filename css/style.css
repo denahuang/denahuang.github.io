@@ -73,7 +73,7 @@ body {
 .message {
   margin-top: 200px; }
   .message .bubble p {
-    background: #DEDFDF;
+    background: rgba(222, 223, 223, 0.8);
     border-radius: 50px;
     font-size: 5vh;
     padding: 10px 20px;

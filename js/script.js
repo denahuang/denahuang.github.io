@@ -19,6 +19,17 @@ var flightPath = {
         {x: 0, y: 0},
         {x: 100, y: 100},
         {x: 80, y: 500},
+        {x: 100, y: 600},
+
+        {x: 50, y: 650},
+        {x: 100, y: 700},
+        {x: 0, y: 800},
+        {x: -100, y: 700},
+        {x: 0, y: 650},
+        {x: 100, y: 700},
+
+        {x: 50, y: 800},
+
         // {x: -100, y: -50},
         // {x: , y: },
 
@@ -47,7 +58,7 @@ var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
     triggerElement: '.animation', 
-    duration: 500,     // 1000 = 1 second
+    duration: 1000,     // 1000 = 1 second
     triggerHook: 0    // 0: top, 1:bottom
 
 })
