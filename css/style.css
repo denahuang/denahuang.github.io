@@ -73,7 +73,7 @@ body {
 .message {
   margin-top: 200px; }
   .message .bubble p {
-    background: rgba(222, 223, 223, 0.8);
+    background: rgba(222, 223, 223, 0.5);
     border-radius: 50px;
     font-size: 5vh;
     padding: 10px 20px;
@@ -87,15 +87,14 @@ body {
 .header {
   height: 80px;
   background: #f1f1f1;
-  overflow: visible; }
+  position: sticky;
+  top: 0; }
   .header .logo {
     width: 80px;
     height: 80px;
     margin-left: 10px; }
   .header .navbar {
-    padding: 0;
-    position: sticky;
-    top: 0; }
+    padding: 0; }
     .header .navbar .nav-icon {
       width: 30px;
       height: 20px;
@@ -158,6 +157,9 @@ body {
       background: #f1f1f1; }
       .header .navbar .navbar-nav .nav-item a {
         color: #232222; }
+
+.info {
+  height: 100vh; }
 
 footer {
   background: #232222;

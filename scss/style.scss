@@ -151,7 +151,7 @@ body {
         
 
         p {
-            background: rgba(222, 223, 223, 0.8);
+            background: rgba(222, 223, 223, 0.5);
             border-radius: 50px;
             font-size: 5vh;
             padding: 10px 20px;
@@ -209,7 +209,8 @@ body {
 .header {
     height: 80px;
     background: $primary-light;
-    overflow: visible;
+    position: sticky;
+    top: 0;
 
     .logo {
         width: 80px;
@@ -219,8 +220,6 @@ body {
 
     .navbar {
         padding: 0;
-        position: sticky;
-        top: 0;
 
         .nav-icon {
             width: 30px;
@@ -314,6 +313,10 @@ body {
             }
         }
     }  
+}
+
+.info {
+    height: 100vh;
 }
 
 
