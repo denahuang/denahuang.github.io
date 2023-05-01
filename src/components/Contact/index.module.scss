@@ -1,0 +1,159 @@
+@import '../../global.scss';
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background: #0006;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.contactContainer {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    // background: inherit;
+    border-radius: 16px;
+    
+    margin: 30px;
+    height: calc(100vh - 30px * 2);
+    // padding: 0 !important;
+
+    display: flex;
+    flex-direction: column;
+    
+    overflow: scroll;
+
+    .form {
+        margin: 50px 20px;
+
+        .intro {
+            margin-bottom: 50px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            background: $background-color-light;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            border: 2px solid var(--button-background-color);
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        input:focus, textarea:focus {
+            // background: var(--focus);
+            outline: none;
+        }
+
+        .submit {
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        span {
+            display: none;
+            text-align: center;
+
+            &.visible {
+                display: block;
+            }
+        }
+    }
+
+
+    .closeBtn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: inherit;
+        border: none;
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+
+.overlay:hover {
+    cursor: pointer;
+}
+
+.contactContainer {
+    height: auto;
+    width: 80%;
+    max-width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    overflow: auto;
+
+    .form {
+        margin: 50px;
+
+        .intro {
+            flex-direction: row;
+
+            .text {
+                flex: 1;
+            }
+
+            .img {
+                flex: 1;
+            }
+        }
+
+        .cont {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .name {
+                width: 100%;
+            }
+
+            .email {
+                width: 100%;
+            }
+        }
+
+        .message {
+
+        }
+    }
+
+    .closeBtn:hover {
+        cursor: pointer;
+        opacity: 80%;
+    }
+}
+}

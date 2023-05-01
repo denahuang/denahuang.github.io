@@ -1,0 +1,137 @@
+.toggle {
+    height: 50px;
+    width: 100px;
+    border-radius: 24px;
+    // background: linear-gradient(to bottom left, #d7e7f3, #fff); //BED1DF
+    background: linear-gradient(to bottom left, #409edd, #ffed9d);
+    box-sizing: border-box;
+    border: 2px solid var(--button-background-color);
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    container-type: inline-size;
+}
+
+.toggle.dark {
+    background: linear-gradient(to bottom right, #191970, #663399);
+}
+
+.toggle:hover {
+
+    .notch {
+        box-shadow: 0 0 30px #ffe46b;
+    }
+}
+
+.dark:hover {
+
+    .notch {
+        box-shadow: 0 0 20px #f5f5f5;
+    }
+}
+
+
+.notch {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #ffe46b;
+    margin-left: 3px;
+    box-shadow: 0 0 5px #ffe46b;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.dark > .notch {
+    background: #f5f5f5;
+    box-shadow: 0 0 5px #f5f5f5;
+    transform: translateX(calc(100cqw - 100% - 6px));
+    // margin-right: 5px;
+}
+
+// .notch > .crater {
+//     background: burlywood;
+//     border-radius: 50%;
+//     position: absolute;
+//     opacity: 0;
+//     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4) inset;
+// }
+// .dark .crater {
+//     opacity: 0.4;
+// }
+
+// .crater:first-child {
+//     left: 5px;
+//     top: 15px;
+//     height: 15px;
+//     width: 40px;
+//     transform: rotate(-45deg);
+// }
+
+// .crater:last-child {
+//     right: 10px;
+//     top: 15px;
+//     height: 15px;
+//     width: 25px;
+//     transform: rotate(45deg);
+// }
+
+// .shape {
+//     position: absolute;
+//     background: whitesmoke;
+//     border-radius: 50%;
+//     transition: all 0.3s ease;
+// }
+
+// .shape.sm {
+//     height: 5px;
+//     width: 50px;
+//     top: 50%;
+//     left: 60%;
+// }
+
+// .shape.md {
+//     height: 10px;
+//     width: 75px;
+//     top: 25%;
+//     left: 25%;
+//     z-index: 2;
+// }
+
+// .shape.lg {
+//     height: 15px;
+//     width: 100px;
+//     bottom: 20px;
+//     left: 25%;
+// }
+
+// .dark .shape {
+//     background: lightgray;
+//     box-shadow: 0 0 10px 2px violet;
+// }
+
+// .dark .shape.sm {
+//     height: 5px;
+//     width: 5px;
+//     transform: translate(-40px, 0);
+// }
+
+// .dark .shape.sm:first-of-type {
+//     transform: translate(-80px, -10px);
+// }
+
+// .dark .shape.md {
+//     height: 10px;
+//     width: 10px;
+//     transform: translate(10px, 0);
+// }
+
+// .dark .shape.lg {
+//     height: 15px;
+//     width: 15px;
+//     transform: translate(-10px, 0);
+// }

@@ -1,0 +1,207 @@
+@import '../../global.scss';
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 100px 20px 0;
+        gap: 20px;
+        
+
+        .introText {
+
+            button {
+                border: none;
+                padding: 0;
+                background: none;
+                color: #fff;
+                margin-bottom: 20px;
+                text-decoration: underline;
+            }
+        }
+
+        .introImg {
+
+            .img {
+                width: 100%;
+            }
+        }
+    }
+
+    .background {
+        padding: 50px 20px;
+    }
+
+    .current {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moodboard {
+        padding: 50px 20px;
+        background: $fabcycle-primary;
+        color: #fff;
+
+        .img {
+            width: 100%;
+        }
+    }
+    
+    .styleGuide {
+        display: flex;
+        padding: 50px 20px;
+    }
+
+    .brandBoard {
+        padding: 50px 20px;
+    }
+
+    .conclusion {
+        padding: 50px 20px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+
+.container {
+    // padding: 0 50px;
+
+    .intro {
+        
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            width: 100%;
+            gap: 50px;
+            max-width: 1000px;
+
+            .introImg {
+                order: 1;
+                flex: 1;
+                
+                .img {
+
+                }
+            }
+        
+            .introText {
+                order: 2;
+                flex: 1;
+                align-self: center;
+
+                button {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .background {
+        padding: 100px 0;
+        max-width: 1000px;
+    }
+
+    .current {
+        padding: 100px 0;
+        max-width: 1000px;
+
+        .imgCont {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .img {
+                height: auto;
+                max-height: 250px;
+                width: auto;
+                max-width: 100%;
+                
+            }
+        }
+    }
+
+    .moodboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+
+        .content {
+            padding: 100px 0;
+            max-width: 1000px;
+
+            .img {
+                width: 100%;
+            }
+        }
+    }
+
+    .styleGuide {
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        max-width: 1000px;
+        align-items: center;
+
+        .content {
+            padding: 100px 0;
+            
+            .img {
+                width: 100%;
+            }
+        }
+    }
+
+    .brandBoard {
+        padding: 0;
+        
+        .content {
+            padding: 100px 0;
+            max-width: 1000px;
+        }
+    }
+    
+    .conclusion {
+        padding: 100px 0;
+        max-width: 1000px;
+        
+
+        .container {
+            flex-direction: row;
+            align-items: start;
+            gap: 20px;
+
+            .item {
+                flex: 1;
+            }
+        }
+    }
+
+}
+
+}

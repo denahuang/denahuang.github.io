@@ -1,0 +1,202 @@
+
+
+
+// .marquee {
+//     z-index: 1;
+//     position: fixed;
+//     top: 0;
+// }
+
+.index {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    // overflow: hidden;
+
+    .header {
+        height: 100vh;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 0;
+            height: 100%;
+            box-sizing: border-box;
+            
+            .intro {
+
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h1 {
+                        margin: 0;
+                        // font-size: 1.5em;
+                    }
+
+                    h2 {
+                        margin: 0;
+                    }
+
+                    .darkModeToggle {
+                        font-size: 2em;
+                        color: inherit;
+                        width: 100%;
+                        max-width: 50px;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .more {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .links {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .workContainer {
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .work {
+            
+
+            .tags {
+                font-size: 0.8em;
+                opacity: 70%;
+            }
+
+            .imgContainer {
+                border-radius: 16px;
+                overflow: hidden;
+                margin-bottom: 10px;
+                border: 2px solid var(--button-background-color);
+                box-sizing: border-box;
+
+                img {
+                    // height: 100%;
+                    vertical-align: top;
+                }
+            }
+        }
+
+        p {
+            margin: 0 16px;
+        }
+    }
+
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-device-width: 768px) {
+
+.index {
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+    gap: 50px;
+
+    .header {
+        top: 0;
+        max-width: 500px;
+        position: -webkit-sticky;
+        position: sticky;
+
+        .content {
+            // padding: 20px 0;
+
+            .intro {
+
+                .title {
+
+                    button:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .more {
+
+
+                .links {
+
+                    a:hover {
+                        // opacity: 80%;
+                        color: var(--link-hover);
+                    }
+                }
+
+                .buttons {
+
+                }
+            }
+        }
+    }
+
+    .workContainer {
+        gap: 30px;
+
+        .work {
+            
+
+            .imgContainer {
+                
+
+                img {
+                    filter: brightness(var(--work-brightness));
+                    transition: 0.3s ease-in-out;
+                }
+            }
+
+            .tags {
+                transition: 0.3s ease-in-out;
+            }
+            
+        }
+
+        .work:hover {
+
+
+            .imgContainer {
+
+
+                img {
+                    transform: scale(1.11);
+                    filter: brightness(100%);
+                    // filter: brightness(80%);
+                }
+            }
+
+            .tags {
+                opacity: 100%;
+            }
+        }
+    }
+}
+}

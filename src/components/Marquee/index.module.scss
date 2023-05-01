@@ -1,0 +1,48 @@
+
+
+.marquee {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: var(--background-color);
+    
+    .content {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-around;
+        min-width: 100vw;
+        gap: var(--gap);
+        animation: scroll 8s linear infinite;
+        background: none;
+        // transition: 0.3s ease-in-out;
+    }
+
+
+    p {
+        margin: 0.3rem;
+        font-size: 1.2rem;
+    }
+
+    @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(calc(-100% - var(--gap)));
+        }
+      }
+}
+
+.marquee:hover {
+
+
+    .content {
+        animation-play-state: paused;
+    }
+}

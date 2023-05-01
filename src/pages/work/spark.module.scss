@@ -1,0 +1,291 @@
+@import '../../global.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sectionName {
+        text-transform: uppercase;
+        margin: 0;
+        color: $spark-primary;
+    }
+
+    .line {
+        opacity: 100%;
+        margin: 0 0 20px;
+        border-color: $spark-primary;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // height: 100vh;
+        padding: 100px 20px;
+        gap: 20px;
+
+        .introImg {
+            order: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img {
+                width: 50%;
+                
+            }
+        }
+
+        .introText {
+            order: 1;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .challenge {
+        background: $spark-primary;
+        color: #fff;
+        // padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .constraints {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                padding: 0;
+            }
+        }
+    }
+
+    .define {
+        padding: 50px 20px;
+        // width: 100%;
+
+        .empathy {
+            display: flex;
+            flex-direction: column;
+
+            .textContainer {
+
+            }
+
+            .imgContainer {
+
+            }
+        }
+
+        .target {
+            display: flex;
+            flex-direction: column;
+
+            .textContainer {
+
+            }
+
+            .imgContainer {
+
+            }
+        }
+    }
+
+    .ideation {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+
+        ul {
+            margin-top: 0;
+        }
+    }
+
+    .prototype {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+
+
+        .brandIdentity {
+            display: flex;
+            flex-direction: column;
+
+            .brand1 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .brand2 {
+
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+
+    .conclusion {
+        padding: 50px 20px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+
+.container {
+    
+    .intro {
+        flex-direction: row;
+        gap: 50px;
+        max-width: 1000px;
+        padding: 100px 50px;
+
+        .introImg {
+            order: 1;
+            width: 50%;
+            
+
+            .img {
+                width: 100%;
+                
+            }
+        }
+
+        .introText {
+            order: 2;
+            width: 50%;
+        }
+    }
+
+    .challenge {
+        width: 100%;
+        padding: 50px 0;
+
+        h1 {
+            margin: 0;
+        }
+        
+        p {
+            margin: 0;
+            max-width: 800px;
+        }
+    }
+
+    .constraints {
+        padding: 50px 50px;
+        max-width: 1000px;
+
+        .container {
+            flex-direction: row;
+            align-items: start;
+            gap: 20px;
+
+            .item {
+                flex: 1;
+            }
+        }
+    }
+
+    .define {
+        padding: 50px 50px;
+        max-width: 1000px;
+
+        .empathy {
+            flex-direction: row;
+            gap: 20px;
+
+            .textContainer {
+                // order: 2;
+                flex: 1;
+            }
+
+            .imgContainer {
+                // order: 1;
+                flex: 1;
+            }
+        }
+
+        .target {
+            flex-direction: row;
+            gap: 20px;
+
+            .textContainer {
+                // order: 2;
+                flex: 1;
+            }
+
+            .imgContainer {
+                // order: 1;
+                flex: 1;
+            }
+        }
+    }
+
+    .ideation {
+        padding: 50px 50px;
+        max-width: 1000px;
+    }
+
+    .prototype {
+        padding: 50px 50px;
+        max-width: 1000px;
+
+        .brandIdentity {
+            flex-direction: row;
+            gap: 10px;
+
+            .brand1 {
+                flex: 1;
+                // gap: 10px;
+            }
+
+            .brand2 {
+                flex: 1;
+            }
+
+            
+        }
+    }
+
+    .conclusion {
+        padding: 50px 50px;
+        max-width: 1000px;
+        
+
+        .container {
+            flex-direction: row;
+            align-items: start;
+            gap: 20px;
+
+            .item {
+                flex: 1;
+            }
+        }
+    }
+}
+}    

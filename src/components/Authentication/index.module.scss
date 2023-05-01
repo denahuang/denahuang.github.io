@@ -1,0 +1,63 @@
+
+.themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.authentication {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .icon {
+        font-size: 3rem;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+
+        input {
+            width: 100%;
+            max-width: 200px;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            border: 2px solid var(--button-background-color);
+            font-family: var(--font-primary);
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+        }
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+
+.authentication {
+
+
+    form {
+        flex-direction: row;
+    }
+}
+}

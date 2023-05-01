@@ -1,0 +1,32 @@
+@import '../../global.scss';
+
+.moreButton {
+    // background: none;
+    
+    // color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    padding: 0 20px;
+    border: 2px solid var(--button-background-color);
+
+    .arrow {
+        margin-right: 5px;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+@media screen and (min-device-width: 768px) { 
+
+.moreButton:hover {
+    cursor: pointer;
+
+
+    .arrow {
+        margin-right: -5px;
+    }
+}
+
+}

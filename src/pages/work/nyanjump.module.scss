@@ -1,0 +1,266 @@
+
+$nyanjump-primary: #183861;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $nyanjump-primary;
+        color: #fff;
+        padding: 100px 20px 0;
+        gap: 20px;
+        
+        .content {
+            background: inherit;
+
+            .introText {
+                background: inherit;
+
+                button {
+                    border: none;
+                    padding: 0;
+                    background: none;
+                    color: #fff;
+                    margin-bottom: 20px;
+                    text-decoration: underline;
+                }
+            }
+
+            .introImg {
+                background: inherit;
+
+                .hero {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .inspiration {
+        padding: 50px 20px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+
+
+            }
+        }
+
+        .imgCont {
+            height: 100%;
+
+            .img {
+                // width: 100%;
+                // height: 100%;
+                // max-height: 400px;
+            }
+        }
+    }
+
+    .moodboard {
+        padding: 50px 20px;
+        background: $nyanjump-primary;
+        color: #fff;
+
+        .content {
+            background: none;
+
+            .img {
+                width: 100%;
+
+            }
+        }
+    }
+
+    .gameElements {
+        padding: 50px 20px;
+        
+    }
+
+    .play {
+        padding: 50px 20px;
+        background: $nyanjump-primary;
+        
+        .content {
+            background: none;
+            color: #fff;
+
+            .mobileNote {
+                display: flex;
+            }
+
+            .gameContainer {
+                background: none;
+
+                iframe {
+                    // width: 100%;
+                }
+            }
+        }
+    }
+
+    .conclusion {
+        padding: 50px 20px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+
+.container {
+
+    .intro {
+        flex-direction: row;
+        gap: 50px;
+        padding: 0;
+        width: 100%;
+
+        .content {
+            display: flex;
+            max-width: 1000px;
+
+            .introImg {
+                order: 1;
+                flex: 1;
+                
+
+                .img {
+                    width: 100%;
+                    
+                }
+            }
+        
+            .introText {
+                order: 2;
+                flex: 1;
+                align-self: center;
+
+                button {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .inspiration {
+        padding: 100px 50px;
+        max-width: 1000px;
+
+        .container {
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+
+            .item {
+                flex: 1;
+
+                .imgCont {
+                    
+
+                    .img {
+                        width: auto;
+                        height: auto;
+                        max-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    .moodboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+
+        .content {
+            padding: 100px 0;
+            max-width: 1000px;
+
+            .img {
+                width: 100%;
+            }
+        }
+    }
+
+    .gameElements {
+        padding: 100px 50px;
+        max-width: 1000px;
+
+        .container {
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+
+            .item {
+
+            }
+        }
+    }
+
+    .play {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+
+        .content {
+            max-width: 1000px;
+
+
+            .mobileNote {
+                display: none;
+            }
+            
+            .gameContainer {
+
+                iframe {
+                    width: 600px;
+                }
+            }
+        }
+    }
+
+    .conclusion {
+        padding: 100px 50px;
+        max-width: 1000px;
+        
+
+        .container {
+            flex-direction: row;
+            align-items: start;
+            gap: 20px;
+
+            .item {
+                flex: 1;
+            }
+        }
+    }
+
+}
+
+}

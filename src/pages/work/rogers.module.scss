@@ -1,0 +1,366 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin: 0;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 20px 0;
+        gap: 20px;
+
+        .introText {
+            
+        }
+
+        .introImg {
+            border-radius: 16px;
+            overflow: hidden;
+
+            .img {
+                display: block;
+            }
+        }
+    }
+
+    .nda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 50px 0;
+        color: #fff;
+        
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            width: 50px;
+            height: 50px;
+            background: none;
+            color: #fff;
+        }
+
+        .banner {
+            display: none;
+        }
+
+        .bannerMobile {
+            display: flex;
+            margin: 0 20px;
+            background: var(--rogers-primary);
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 16px;
+            gap: 20px;
+        }
+
+    }
+
+    .overview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+
+        .problem {
+
+
+        }
+
+        .solution {
+
+        }
+    }
+
+    .painPoints {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+
+    }
+
+    .handOff {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .userTesting {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .hiFi {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .forming {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+
+
+    .underConstruction {
+        padding: 50px 20px;
+
+    }
+
+    .conclusion {
+        padding: 50px 20px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-device-width: 768px) {
+
+.container {
+
+    .intro {
+        flex-direction: row;
+        gap: 50px;
+        max-width: 1000px;
+        padding: 100px 50px;
+
+        .introImg {
+            flex: 1;
+        }
+
+        .introText {
+            flex: 1;
+        }
+    }
+
+    .nda {
+        margin: 0;
+
+        .icon {
+            font-size: 2.5rem;
+            width: 100%;
+            max-width: 60px;
+            height: 60px;
+        }
+
+        .bannerMobile {
+            display: none;
+        }
+
+        .banner {
+            display: flex;
+            margin: 0 20px;
+            background: var(--rogers-primary);
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 16px;
+            gap: 20px;
+        }
+
+        .banner:hover {
+            filter: brightness(90%);
+        }
+    }
+
+    .overview {
+        justify-content: center;
+        flex-direction: row;
+        max-width: 1000px;
+        padding: 50px 50px;
+        gap: 50px;
+
+        .problem {
+            flex: 1;
+
+        }
+
+        .solution {
+            flex: 1;
+        }
+    }
+
+    .painPoints {
+        justify-content: center;
+        max-width: 1000px;
+        padding: 50px 50px;
+
+        ol {
+            display: flex;
+            gap: 50px;
+
+            li {
+                flex: 1;
+            }
+        }
+    }
+
+    .handOff {
+        justify-content: center;
+        max-width: 1000px;
+        padding: 50px 50px;
+        
+        ul {
+            margin: 0;
+        }
+
+        .imgs {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    .userTesting {
+        justify-content: center;
+        max-width: 1000px;
+        padding: 50px 50px;
+
+        ul {
+            margin: 0;
+        }
+    }
+    
+    .hiFi {
+        justify-content: center;
+        max-width: 1000px;
+        padding: 50px 50px;
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .incidentReports {
+                
+
+                .content {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+
+                    .info {
+                        flex: 2;
+                        order: 2;
+                    }
+
+                    .video {
+                        flex: 3;
+                        order: 1;
+                    }
+                }
+            }
+
+            .liveUpdates {
+
+                .content {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+
+                    .info {
+                        flex: 2;
+                        order: 2;
+                    }
+
+                    .video {
+                        flex: 3;
+                        order: 1;
+                    }
+                }
+            }
+
+            .teamSupervision {
+
+                .content {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+
+                    .info {
+                        flex: 2;
+                        order: 2;
+                    }
+
+                    .video {
+                        flex: 3;
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .forming {
+        justify-content: center;
+        max-width: 1000px;
+        padding: 50px 50px;
+    }
+
+    .underConstruction {
+        padding: 100px 50px;
+        max-width: 1000px;
+    }
+
+    .conclusion {
+        padding: 100px 50px;
+        max-width: 1000px;
+        
+
+        .container {
+            flex-direction: row;
+            align-items: start;
+            gap: 20px;
+
+            .item {
+                flex: 1;
+            }
+        }
+    }
+}
+}
