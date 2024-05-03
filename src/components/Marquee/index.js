@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './index.module.scss';
 
 const Marquee = () => {
-    const text = "Currently open to Fall 2023 internships!"
+    const text = "Currently open to 2024 internships!"
 
     return (
         <a className={`${styles.marquee}`} href="mailto:d74huang@uwaterloo.ca" target="_blank" rel="noreferrer">
