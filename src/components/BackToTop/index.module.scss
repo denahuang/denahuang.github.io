@@ -1,0 +1,29 @@
+
+
+.backToTop {
+    font-family: var(--font-title);
+    font-size: 16px;
+    background: var(--white-transparent-03);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 24px;
+    border-radius: var(--border-radius-primary);
+    position: relative; // for border
+}
+
+.backToTop::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--border-radius-primary);
+    border: 1px solid transparent;
+    background: linear-gradient(180deg, var(--white-transparent-03), var(--white-transparent-10)) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.backToTop:hover {
+    cursor: pointer;
+    background: var(--white-transparent-10);
+}

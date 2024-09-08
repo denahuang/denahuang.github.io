@@ -4,396 +4,336 @@ $color-primary: #FFFDF7;
 $color-secondary: #A2B0C5;
 $color-dark: #222233;
 
-// $machimachi-primary: #2E61AE;
 $machi-light: #EEF5FF;
+@import '../../global.scss';
 
-.container {
+$color-primary: $machimachi-primary;
+
+.body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .sectionName {
-        text-transform: uppercase;
-        // border-bottom: $color-dark 1px solid;
-        margin: 0;
-        color: $machimachi-primary;
-    }
-
-    .line {
-        opacity: 100%;
-        margin: 0 0 20px;
-        border-color: $machimachi-primary;
-    }
-
-    .intro {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // height: 100vh;
-        padding: 100px 20px;
-        gap: 20px;
-
-        .introImg {
-            order: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .img {
-                width: 50%;
-                
-            }
-        }
-
-        .introText {
-            order: 1;
-
-            a {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .challenge {
-        background: $machimachi-primary;
-        color: #fff;
-        // padding: 30px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-    }
-
-    .background {
-        padding: 50px 20px;
-
-        .currentSection {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            // gap: 20px;
-
-            .currentImg {
-                max-width: 50%;
-            }
-        }
-
-        .processImg {
-            width: 100%;
-        }
-    }
-
-    .discover {
-        padding: 50px 20px;
-        display: flex;
-        flex-direction: column;
-
-        .empathyMapImg {
-            width: 100%;
-            margin-bottom: 30px;
-        }
-
-        .personaSection {
-
-            .personaImg {
-                width: 100%;
-            }
-        }
-
-        
-    }
-
-    .define {
-        padding: 50px 20px;
-
-        .informationHierarchyImg {
-            width: 100%;
-            margin-bottom: 30px;
-        }
-
-        .userFlowImg {
-            width: 100%;
-        }
-    }
-
-    .ideate {
-        padding: 50px 20px;
-        display: flex;
-        flex-direction: column;
-
-        .container {
-            display: flex;
-
-            li {
-                width: 100%;
-            }
-
-            .wireframeImg {
-                max-width: 100%;
-            }
-        }
-    }
-
-    .prototype {
-        // padding: 50px 20px;
-        background: $machi-light;
-        color: $color-dark;
-
-        .content {
-            background: inherit;
-            color: inherit;
-
-            .midFidelityImg {
-                max-width: 100%;
-            }
-            
-            a {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .validate {
-        padding: 50px 20px;
-
-        .likesSection {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            .likesImg {
-                width: 100%;
-            }
-        }
-    }
-
-    .ui {
-        padding: 50px 20px;
-
-        .styleGuide {
-            width: 100%;
-        }
-
-        a {
-            text-decoration: underline;
-        }
-
-        iframe {
-            width: 100%;
-        }
-    }
-
-    .conclusion {
-        padding: 50px 20px;
-
-        .container {
-            display: flex;
-            flex-direction: column;
-
-            .item {
-                padding: 0;
-            }
-        }
-    }
-}
-
-
-@media screen and (min-device-width: 768px) {
-
-.container {
     
-    .intro {
-        flex-direction: row;
-        gap: 50px;
-        max-width: 1000px;
-        padding: 100px 50px;
-
-        .introImg {
-            order: 1;
-            width: 50%;
-            
-
-            .img {
-                width: 100%;
-                
-            }
-        }
-
-        .introText {
-            order: 2;
-            width: 50%;
-        }
+    background: var(--body-color-background);
+    color: var(--text-color);
+   
+    p {
+        margin: 0;
     }
 
-    .challenge {
+    .wrapper {
         width: 100%;
-        padding: 50px 0;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        gap: 48px;
+        margin: 24px 0 20vh;
 
-        h1 {
-            margin: 0;
-        }
-        
-        p {
-            margin: 0;
-            max-width: 800px;
-        }
-    }
+        background: var(--body-color-background);
+        color: var(--text-color);
 
-    .background {
-        padding: 100px 50px;
-        max-width: 1000px;
+        .workNav {
+            width: 100%;
+            max-width: 160px;
 
-        .currentSection {
-            flex-wrap: nowrap;
-            flex-direction: row;
-            gap: 20px;
-            
-            .currentImg {
-                flex: 1;
-                // max-height: 400px;
-                
-            }
-        }
+            position: sticky;
+            position: -webkit-sticky;
+            align-self: flex-start;
+            top: 48px;
 
-        .problemSection {
-
-            .container {
+            .sections {
                 display: flex;
                 flex-direction: column;
+                gap: 16px;
+                margin: 16px 24px;
 
+                a {
+                    color: var(--white-transparent-30);
+                }
 
-                .row {
+                a[class="active"], a:hover {
+                    color: #fff;
+                }
+            }
+        }
+        // section[id="home"] {
+        //     background: pink;
+        // }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            width: 100%;
+            max-width: 1000px;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                h1 {
+                    font-family: var(--font-title);
+                    margin: 0;
+                }
+    
+                .subtitle {
+                    font-size: 20px;
+                }
+            }
+
+            .intro {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                margin: 24px 0;
+
+                div {
+                    width: 50%;
+                }
+
+                .text {
                     display: flex;
-                    gap: 50px;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 24px;
 
-                    .problem {
-                        flex: 1;
+                    .banner {
+                        display: flex;
+                        background: var(--white-transparent-03);
+                        border: 1px solid $color-primary;
+                        border-radius: var(--border-radius-primary);
+                        align-items: center;
+                        padding: 10px 20px;
+                        width: 100%;
+                    }
+                    .banner:hover {
+                        background: var(--white-transparent-10);
+                    }
+                }
+
+                .img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 400px;
+                    background: #000;
+                    border-radius: var(--border-radius-primary);
+                    border: 1px solid var(--white-transparent-10);
+
+                    img {
+                        width: 100%;
+    
+                    }
+                }
+            }
+
+            .block {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 50px 0;
+                gap: 20px;
+
+                .blockTitle {
+                    width: 100%;
+                    font-family: var(--font-title);
+                    font-weight: 500;
+
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+
+                .blockContent {
+                    width: 100%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .text1 {
+                        font-size: 1em;
+                        font-weight: 600;
+                    }
+
+                    .text2 {
+                        font-size: 1.6em;
+                        color: $color-primary;
+                        font-family: var(--font-title);
+                    }
+
+                    .text3 {
+                        font-size: 1em;
+                        // font-weight: 300;
+                    }
+
+                    .contentCard {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 36px;
+
+                        .textCard {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+
+                            .card {
+                                width: 100%;
+                                background: var(--white-transparent-03);
+                                color: var(--text-color);
+                                padding: 24px;
+                                border-radius: var(--border-radius-primary);
+                                border: 1px solid $color-primary;
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                justify-content: center;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .tabs, .tabs2, .tabs3, .tabs4 {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+
+                        .tabsRadio {
+                            display: none;
+                        }
+
+                        .tabsLabel {
+                            padding: 16px 48px;
+                            cursor: pointer;
+                            color: var(--text-color);
+                            background: $color-primary;
+                            border-radius: $radius-primary $radius-primary 0 0;
+                        }
+                        
+                        .tabsContent {
+                            order: 1;
+                            width: 100%;
+                            // border-bottom: 3px solid #dddddd;
+                            // line-height: 1.5;
+                            // font-size: 0.9em;
+                            display: none;
+                            background: #fff;
+                            // color: var(--background-color);
+                            padding: 48px;
+                            border-radius: 0 $radius-primary $radius-primary $radius-primary;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        
+                        .tabsRadio:checked + .tabsLabel {
+                            font-weight: bold;
+                            color: $color-primary;
+                            background: var(--text-color);
+                            // border-bottom: 2px solid #009578;
+                        }
+                        
+                        .tabsRadio:checked + .tabsLabel + .tabsContent {
+                            display: initial;
+                        }
+                    }
+
+                    .imgContainer {
+                        display: flex;
+                        width: 100%;
+
+                        img {
+                            width: 50%;
+                        }
+                    }
+
+                    .conclusion {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                    }
+
+                    .button {
+                        background: $color-primary;
+                        padding: 8px 24px;
+                        border-radius: var(--border-radius-primary);
+                    }
+
+                    .button:hover {
+                        opacity: 80%;
                     }
                 }
             }
         }
     }
-
-    .discover {
-        padding: 100px 50px;
-        max-width: 1000px;
-
-        .empathyMapImg {
-            max-width: 500px;
-            align-self: center;
-        }
-
-        .personaSection {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 20px;
-
-            .personaImg {
-                width: 50%;
-                max-width: 400px;
-            }
-        }
-
-        
-    }
-
-    .define {
-        padding: 100px 50px;
-        max-width: 1000px;
-
-        .informationHierarchyImg {
-            
-        }
-
-        .userFlowImg {
-            
-        }
-    }
-
-    .ideate {
-        padding: 100px 50px;
-        max-width: 1000px;
-
-        .container {
-            max-width: 800px;
-            align-self: center;
-
-            .wireframeImg {
-                height: auto;
-                width: auto;
-                max-height: 400px;
-            }
-        }
-    }
-
-    .prototype {
-        padding: 100px 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        .content {
-            max-width: 1000px;
-        }
-
-        .midFidelityImg {
-            height: auto;
-            width: auto;
-            max-height: 400px;
-        }
-    }
-
-    .validate {
-        padding: 100px 50px;
-        max-width: 1000px;
-        
-
-        .likesSection {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            .likesImg {
-                width: 33%;
-            }
-        }
-    }
-
-    .ui {
-        padding: 100px 50px;
-        max-width: 1000px;
-        
-
-        .styleGuide {
-            
-        }
-
-        iframe {
-            
-        }
-    }
-
-    .conclusion {
-        padding: 100px 50px;
-        max-width: 1000px;
-        
-
-        .container {
-            flex-direction: row;
-            align-items: start;
-            gap: 20px;
-
-            .item {
-                flex: 1;
-            }
-        }
-    }
 }
 
+@media screen and (min-device-width: 768px) {
+
+.content {
+    width: 100%;
+
+    .block {
+        flex-direction: row;
+        gap: 48px;
+
+        .blockTitle {
+            // flex: 250px;
+            
+            p {
+                margin: 0;
+                font-size: 1.6em;
+            }
+        }
+
+        .blockContent {
+            margin: 0;
+            
+
+            .text1 {
+                font-weight: 600;
+
+            }
+
+            .text2 {
+
+
+            }
+
+            .text3 {
+
+
+            }
+
+            video {
+                margin-top: 24px;
+            }
+
+            .contentCard {
+                flex-direction: row;
+
+                .textCard {
+                    gap: 16px;
+
+                    .card {
+                        
+                    }
+                }
+            }
+
+            
+                
+        }
+    }
+    
+}
 }

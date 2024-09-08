@@ -1,150 +1,190 @@
 
 
-.container {
+.body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    background: var(--body-color-background);
+    color: var(--text-color);
 
-    padding: 50px 20px;
-
-    .gallery {
-        padding: 100px 0;
-
-        .sliderWrap {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-            
+    .wrapper {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20vh;
+        
+        .content {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
 
-            background: none;
-            
-            .buttons {
-                position: fixed;
-                z-index: 4;
-
-            .btnClose, .btnPrev, .btnNext {
-                position: fixed;
-                cursor: pointer;
-                opacity: 0.6;
-                color: #fff;
-                
-                width: 50px;
-                height: 50px;
+            .intro {
+                font-family: var(--font-title);
             }
 
-            .btnNext:hover, .btnPrev:hover, .btnClose:hover {
-                opacity: 1;
-            }
+            .gallery {
+                padding: 100px 0;
 
-            .btnClose {
-                top: 40px;
-                right: 40px;
-            }
+                .sliderWrap {
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
 
-            .btnPrev {
-                top: 50%;
-                transform: translateY(-50%);
-                left: 40px;
-            }
+                    background: none;
+                    
+                    .buttons {
+                        position: fixed;
+                        z-index: 4;
 
-            .btnNext {
-                top: 50%;
-                transform: translateY(-50%);
-                right: 40px;
-            }
-            }
+                    .btnClose, .btnPrev, .btnNext {
+                        position: fixed;
+                        cursor: pointer;
+                        opacity: 0.6;
+                        color: #fff;
+                        
+                        width: 50px;
+                        height: 50px;
+                    }
 
-            .background {
-                position: fixed;
-                width: 100vw;
-                height: 100vh;
-                z-index: 2;
-                background: rgba(0, 0, 0, 0.8);
-                // background: none;
+                    .btnNext:hover, .btnPrev:hover, .btnClose:hover {
+                        opacity: 1;
+                    }
 
-            }       
+                    .btnClose {
+                        top: 40px;
+                        right: 40px;
+                    }
 
-            .fullScreenImage {
-                margin: 0 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 3;
-                background: none;
+                    .btnPrev {
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 40px;
+                    }
 
-                img {
-                    max-width: 100%;
-                    max-height: 100%;
-                    pointer-events: none;
-                    -webkit-user-select: none; /* Safari */
-                    -ms-user-select: none; /* IE 10 and IE 11 */
-                    user-select: none; /* Standard syntax */  
+                    .btnNext {
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 40px;
+                    }
+                    }
+
+                    .background {
+                        position: fixed;
+                        width: 100vw;
+                        height: 100vh;
+                        z-index: 2;
+                        background: rgba(0, 0, 0, 0.8);
+                        // background: none;
+
+                    }       
+
+                    .fullScreenImage {
+                        margin: 0 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 3;
+                        background: none;
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            pointer-events: none;
+                            -webkit-user-select: none; /* Safari */
+                            -ms-user-select: none; /* IE 10 and IE 11 */
+                            user-select: none; /* Standard syntax */  
+                        }
+                    }
                 }
+
+                .galleryWrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 620px;
+                    margin: 0 auto;
+
+                    .single {
+                        width: 100%;
+                        cursor: pointer;
+
+                        img {
+                            max-width: 100%;
+                            transition: 0.1s ease-in-out;
+                        }
+
+                        img:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+
             }
         }
-
-        .galleryWrap {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            max-width: 620px;
-            margin: 0 auto;
-
-            .single {
-                width: 100%;
-                cursor: pointer;
-
-                img {
-                    max-width: 100%;
-                    transition: 0.1s ease-in-out;
-                }
-
-                img:hover {
-                    transform: scale(1.05);
-                }
-            }
-        }
-
     }
 }
 
 @media screen and (min-device-width: 768px) {
 
-.container {
 
-    .gallery {
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background: var(--body-color-background);
+        color: var(--text-color);
+    
+        .wrapper {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20vh;
+            
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .gallery {
 
-        .sliderWrap {
+                    .sliderWrap {
 
 
-            .fullScreenImage {
-                max-width: 500px;
+                        .fullScreenImage {
+                            max-width: 500px;
 
-                img {
-                    
+                            img {
+                                
+                            }
+                        }
+                    }
+
+                    .galleryWrap {
+                        max-width: 1000px;
+
+                        .single {
+                            width: 200px;
+                        }
+
+                    }
                 }
             }
-        }
-
-        .galleryWrap {
-            max-width: 1000px;
-
-            .single {
-                width: 200px;
             }
-
-        }
-    }
-}
-}
+}}

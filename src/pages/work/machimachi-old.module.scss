@@ -1,0 +1,399 @@
+@import '../../global.scss';
+
+$color-primary: #FFFDF7;
+$color-secondary: #A2B0C5;
+$color-dark: #222233;
+
+// $machimachi-primary: #2E61AE;
+$machi-light: #EEF5FF;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sectionName {
+        text-transform: uppercase;
+        // border-bottom: $color-dark 1px solid;
+        margin: 0;
+        color: $machimachi-primary;
+    }
+
+    .line {
+        opacity: 100%;
+        margin: 0 0 20px;
+        border-color: $machimachi-primary;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // height: 100vh;
+        padding: 100px 20px;
+        gap: 20px;
+
+        .introImg {
+            order: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img {
+                width: 50%;
+                
+            }
+        }
+
+        .introText {
+            order: 1;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .challenge {
+        background: $machimachi-primary;
+        color: #fff;
+        // padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .background {
+        padding: 50px 20px;
+
+        .currentSection {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            // gap: 20px;
+
+            .currentImg {
+                max-width: 50%;
+            }
+        }
+
+        .processImg {
+            width: 100%;
+        }
+    }
+
+    .discover {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+
+        .empathyMapImg {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .personaSection {
+
+            .personaImg {
+                width: 100%;
+            }
+        }
+
+        
+    }
+
+    .define {
+        padding: 50px 20px;
+
+        .informationHierarchyImg {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .userFlowImg {
+            width: 100%;
+        }
+    }
+
+    .ideate {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+
+        .container {
+            display: flex;
+
+            li {
+                width: 100%;
+            }
+
+            .wireframeImg {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .prototype {
+        // padding: 50px 20px;
+        background: $machi-light;
+        color: $color-dark;
+
+        .content {
+            background: inherit;
+            color: inherit;
+
+            .midFidelityImg {
+                max-width: 100%;
+            }
+            
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .validate {
+        padding: 50px 20px;
+
+        .likesSection {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .likesImg {
+                width: 100%;
+            }
+        }
+    }
+
+    .ui {
+        padding: 50px 20px;
+
+        .styleGuide {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    .conclusion {
+        padding: 50px 20px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-device-width: 768px) {
+
+.container {
+    
+    .intro {
+        flex-direction: row;
+        gap: 50px;
+        max-width: 1000px;
+        padding: 100px 50px;
+
+        .introImg {
+            order: 1;
+            width: 50%;
+            
+
+            .img {
+                width: 100%;
+                
+            }
+        }
+
+        .introText {
+            order: 2;
+            width: 50%;
+        }
+    }
+
+    .challenge {
+        width: 100%;
+        padding: 50px 0;
+
+        h1 {
+            margin: 0;
+        }
+        
+        p {
+            margin: 0;
+            max-width: 800px;
+        }
+    }
+
+    .background {
+        padding: 100px 50px;
+        max-width: 1000px;
+
+        .currentSection {
+            flex-wrap: nowrap;
+            flex-direction: row;
+            gap: 20px;
+            
+            .currentImg {
+                flex: 1;
+                // max-height: 400px;
+                
+            }
+        }
+
+        .problemSection {
+
+            .container {
+                display: flex;
+                flex-direction: column;
+
+
+                .row {
+                    display: flex;
+                    gap: 50px;
+
+                    .problem {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .discover {
+        padding: 100px 50px;
+        max-width: 1000px;
+
+        .empathyMapImg {
+            max-width: 500px;
+            align-self: center;
+        }
+
+        .personaSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+
+            .personaImg {
+                width: 50%;
+                max-width: 400px;
+            }
+        }
+
+        
+    }
+
+    .define {
+        padding: 100px 50px;
+        max-width: 1000px;
+
+        .informationHierarchyImg {
+            
+        }
+
+        .userFlowImg {
+            
+        }
+    }
+
+    .ideate {
+        padding: 100px 50px;
+        max-width: 1000px;
+
+        .container {
+            max-width: 800px;
+            align-self: center;
+
+            .wireframeImg {
+                height: auto;
+                width: auto;
+                max-height: 400px;
+            }
+        }
+    }
+
+    .prototype {
+        padding: 100px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .content {
+            max-width: 1000px;
+        }
+
+        .midFidelityImg {
+            height: auto;
+            width: auto;
+            max-height: 400px;
+        }
+    }
+
+    .validate {
+        padding: 100px 50px;
+        max-width: 1000px;
+        
+
+        .likesSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .likesImg {
+                width: 33%;
+            }
+        }
+    }
+
+    .ui {
+        padding: 100px 50px;
+        max-width: 1000px;
+        
+
+        .styleGuide {
+            
+        }
+
+        iframe {
+            
+        }
+    }
+
+    .conclusion {
+        padding: 100px 50px;
+        max-width: 1000px;
+        
+
+        .container {
+            flex-direction: row;
+            align-items: start;
+            gap: 20px;
+
+            .item {
+                flex: 1;
+            }
+        }
+    }
+}
+
+}

@@ -20,7 +20,7 @@ const FourOhFour = () => {
                 <h1>OOPS</h1>
                 <h2>How'd you get here??</h2>
                 <p>Click <a href="/">Here</a> to go Home</p>
-                <img src={require("../imgs/illustration3.png")} />
+                {/* <img src={require("../imgs/illustration3.png")} /> */}
             </div>
             </div> : <Authentication />} </>}
         </div>

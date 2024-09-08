@@ -9,7 +9,7 @@ import { useUserContext } from '../../firebase/userContext';
 import hero from '../../imgs/fabcycle/fabcycle-overview.png';
 
 import WorkIntro from '../../components/WorkIntro';
-import WorkButtons from '../../components/WorkButtons';
+// import WorkButtons from '../../components/WorkButtons';
 import Footer from '../../components/Footer';
 
 const Fabcycle = () => {
@@ -33,7 +33,7 @@ const Fabcycle = () => {
         {loading ? <></> : <> {user ? 
         <div>
         <div className={styles.container}>
-            <WorkButtons />
+            {/* <WorkButtons /> */}
             <WorkIntro
                 title="Revamping FABCYCLE's design system for future branding use while presenting a more memorable impression."
                 // tags="BRAND DESIGN, PASSION PROJECT"

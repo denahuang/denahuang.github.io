@@ -1,0 +1,18 @@
+a.active {
+    background: var(--logo-color);
+    color: var(--pure) !important;
+
+    svg {
+        stroke: var(--pure);
+    }
+}
+
+.item:hover:not(.active) {
+    background: var(--background-hover);
+    border: 1px solid var(--border) !important;
+
+
+    svg {
+        display: flex !important;
+    }
+}

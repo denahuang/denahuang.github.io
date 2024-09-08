@@ -53,7 +53,7 @@ const About = ({ func }) => {
                     </Col>
                     <Col className={styles.imgContainer} xs="12" md="6">
                         {/* <img src={require("../../imgs/dena-holding-cat.jpg")} className={styles.img} alt="me" /> */}
-                        <img src={require("../../imgs/dena.jpg")} className={styles.img} alt="me" />
+                        <img src={require("../../imgs/dena-dog.png")} className={styles.img} alt="me" />
                     </Col>
                 </Row>
                 {/* <div className={styles.closeBtn} onClick={func}><FontAwesomeIcon icon={faClose} /></div> */}

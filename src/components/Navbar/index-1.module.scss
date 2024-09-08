@@ -1,0 +1,134 @@
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 0 0 200px;
+    font-family: var(--font-title);
+    
+
+    .name {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        svg {
+            width: 100%;
+            height: auto;
+            // height: 160px;
+            // width: auto;
+            fill: var(--logo-color);
+            stroke: none;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+
+        .text {
+            display: flex;
+            flex-direction: column;
+
+            .rotate { // from https://www.youtube.com/watch?v=f0qX-lkk8Y8
+                margin: 8px 0;
+                height: 1.2em;
+                overflow: hidden;
+
+                span {
+                    display: block;
+                    // border: 1px solid orange;
+                    animation: spin_words 6s infinite;
+                }
+
+                @keyframes spin_words {
+                    10% {
+                        transform: translateY(-0%); // -12
+                    }
+                    25% {
+                        transform: translateY(-0%); // -100
+                    }
+                    35% {
+                        transform: translateY(-112%); // -212
+                    }
+                    50% {
+                        transform: translateY(-100%); // -200
+                    }
+                    60% {
+                        transform: translateY(-212%); // -312
+                    }
+                    75% {
+                        transform: translateY(-200%); // -300
+                    }
+                    85% {
+                        transform: translateY(-312%); // -412
+                    }
+                    100% {
+                        transform: translateY(-300%); // -400
+                    }
+                }
+            }
+        }
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            
+            border: 1px solid var(--background-color);
+
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: inherit;
+
+                svg {
+                    // stroke: inherit;
+                }
+            }
+
+            .label {
+                background: inherit;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                color: inherit;
+
+                p {
+                    margin: 0;
+                }
+
+                svg {
+                    // color: var(--text-color);
+                    display: none;
+                    height: 16px;
+                }
+            }
+        }
+
+        
+    }
+}
+
+svg {
+    stroke: var(--text-color);
+    // stroke: inherit;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}

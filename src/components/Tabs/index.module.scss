@@ -1,0 +1,43 @@
+@import '../../global.scss';
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .tabsRadio {
+        display: none;
+    }
+
+    .tabsLabel {
+        padding: 16px 48px;
+        cursor: pointer;
+        color: var(--text-color);
+        background: $rogers-primary;
+        border-radius: $radius-primary $radius-primary 0 0;
+    }
+      
+    .tabsContent {
+        order: 1;
+        width: 100%;
+        // border-bottom: 3px solid #dddddd;
+        // line-height: 1.5;
+        // font-size: 0.9em;
+        display: none;
+        background: var(--text-color);
+        color: var(--background-color);
+        padding: 48px;
+        border-radius: 0 $radius-primary $radius-primary $radius-primary;
+    }
+      
+    .tabsRadio:checked + .tabsLabel {
+        font-weight: bold;
+        color: $rogers-primary;
+        background: var(--text-color);
+        // border-bottom: 2px solid #009578;
+    }
+      
+    .tabsRadio:checked + .tabsLabel + .tabsContent {
+        display: initial;
+    }
+}

@@ -15,8 +15,11 @@
         align-items: center;
         text-align: center;
 
-        h1 {
-            margin: 0;
+        .text {
+
+            h1 {
+                margin: 0;
+            }
         }
 
         .hero {
@@ -46,10 +49,19 @@
     
     .heroSection {
         max-width: 1000px;
+        height: auto;
+        justify-content: flex;
+        
+        .text {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
         .hero {
-            max-height: 500px;
-            width: auto;
+            // max-height: 500px;
+            // width: auto;
         }
     }
 

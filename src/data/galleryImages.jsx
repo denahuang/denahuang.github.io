@@ -66,6 +66,16 @@ export const galleryImages = [
         ]
     },
     {
+        img: require('../imgs/gallery/rbc.png'),
+        title: 'RBC',
+        date: 'November 2023',
+        description: '',
+        tags: [
+            'Graphic Design',
+            'Figma'
+        ]
+    },
+    {
         img: require('../imgs/gallery/YourMindMatters-img.jpg'),
         title: 'Your Mind Matters (Image)',
         date: 'March 2022',
@@ -127,15 +137,15 @@ export const galleryImages = [
             'Acrylic'
         ]
     },
-    // {
-    //     img: require('../imgs/gallery/machi-0.jpg'),
-    //     title: '',
-    //     date: '',
-    //     description: '',
-    //     tags: [
-    //         ''
-    //     ]
-    // },
+    {
+        img: require('../imgs/gallery/ENGL 392A Studio 1.png'),
+        title: '',
+        date: '',
+        description: '',
+        tags: [
+            ''
+        ]
+    },
     // {
     //     img: require('../imgs/gallery/machi-0.jpg'),
     //     title: '',

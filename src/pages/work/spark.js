@@ -9,7 +9,7 @@ import { useUserContext } from '../../firebase/userContext';
 import hero from '../../imgs/spark/spark.png';
 
 import WorkIntro from '../../components/WorkIntro';
-import WorkButtons from '../../components/WorkButtons';
+// import WorkButtons from '../../components/WorkButtons';
 import Footer from '../../components/Footer';
 import ProgressBar from '../../components/ProgressBar';
 
@@ -26,7 +26,7 @@ const Spark = () => {
         <div>
         <ProgressBar color="4A1EB9" /> 
         <div className={styles.container}>
-            <WorkButtons />
+            {/* <WorkButtons /> */}
             <WorkIntro 
             title="Unleashing your inner child, one swipe at a time"
             // tags="PRODUCT DESIGN, DESIGNATHON"
